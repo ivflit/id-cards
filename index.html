@@ -4,16 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <style>
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .link-to-card {
+        background-color: #c9c9c9;
+
+        padding: 1rem;
+        border-radius: 50px;
+      }
+      .heading {
+        font-size: 2rem;
+      }
+    </style>
   </head>
   <body>
-    <h1>Samples</h1>
-    <ul>
-      <li>
-        <a href="card1.html">Card 1 </a>
-      </li>
-      <li>
-        <a href="card2.html">Card 2 </a>
-      </li>
-    </ul>
+    <section class="section">
+      <h1 class="heading">Samples</h1>
+      <!-- <ul>
+        <li>
+          <a href="card1.html">Card 1 </a>
+        </li>
+        <li>
+          <a href="card2.html">Card 2 </a>
+        </li>
+      </ul> -->
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <div class="link-to-card is-flex is-justify-content-center">
+              <a href="card1.html">Card 1 </a>
+            </div>
+          </div>
+          <div class="column">
+            <div class="link-to-card is-flex is-justify-content-center">
+              <a href="card2.html">Card 2 </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
