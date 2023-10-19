@@ -20,6 +20,10 @@
       }
       .name {
         font-weight: 700;
+        font-size: 1.73rem;
+      }
+      .editor-container {
+        font-weight: 400;
       }
       .id-card {
         background-image: url(static/img/verticalCardbg.png);
@@ -49,6 +53,9 @@
         color: white;
         border-radius: 25px;
       }
+      .card-contents-container {
+        gap: 1rem;
+      }
     </style>
   </head>
   <body>
@@ -65,40 +72,52 @@
         </div>
         <div class="id-card-container is-flex is-justify-content-center">
           <div class="id-card">
-            <div class="logo-container is-flex is-justify-content-center">
-              <img
-                src="static/img/salfordlogo.png"
-                alt="salford logo"
-                class="logo"
-              />
-            </div>
-            <div class="avatar-container is-flex is-justify-content-center">
-              <div class="avatar-box">
+            <div
+              class="card-contents-container is-flex is-flex-direction-column"
+            >
+              <div class="logo-container is-flex is-justify-content-center">
                 <img
-                  src="static/img/blank-avatar.png"
-                  alt="avatar"
-                  class="avatar"
+                  src="static/img/salfordlogo.png"
+                  alt="salford logo"
+                  class="logo"
                 />
               </div>
-            </div>
-            <div class="name-container is-flex is-justify-content-center">
-              <h1 class="name">MORGAN MAXWELL</h1>
-            </div>
-            <div class="job-title-container is-flex is-justify-content-center">
-              <div class="job-box"><h2>Manager</h2></div>
-            </div>
-            <div class="editor-container is-flex is-justify-content-center">
-              <ul>
-                <li>ID No :12345789</li>
-                <li>E-mail :hello@reallygreatsite.com</li>
-                <li>Phone :123-456-789</li>
-              </ul>
-            </div>
-            <div class="barcode-container is-flex is-justify-content-center">
-              <img class="barcode" src="static/img/barcode.png" alt="barcode" />
-            </div>
-            <div class="id-number-container is-flex is-justify-content-center">
-              123-456-789
+              <div class="avatar-container is-flex is-justify-content-center">
+                <div class="avatar-box">
+                  <img
+                    src="static/img/blank-avatar.png"
+                    alt="avatar"
+                    class="avatar"
+                  />
+                </div>
+              </div>
+              <div class="name-container is-flex is-justify-content-center">
+                <h1 class="name">MORGAN MAXWELL</h1>
+              </div>
+              <div
+                class="job-title-container is-flex is-justify-content-center"
+              >
+                <div class="job-box"><h2>Manager</h2></div>
+              </div>
+              <div class="editor-container is-flex is-justify-content-center">
+                <ul>
+                  <li>ID No :12345789</li>
+                  <li>E-mail :hello@reallygreatsite.com</li>
+                  <li>Phone :123-456-789</li>
+                </ul>
+              </div>
+              <div class="barcode-container is-flex is-justify-content-center">
+                <img
+                  class="barcode"
+                  src="static/img/barcode.png"
+                  alt="barcode"
+                />
+              </div>
+              <div
+                class="id-number-container is-flex is-justify-content-center"
+              >
+                123-456-789
+              </div>
             </div>
           </div>
         </div>
