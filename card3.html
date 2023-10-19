@@ -17,25 +17,36 @@
         background-size: cover;
       }
       .avatar {
-        height: 3rem;
+        height: 10rem;
+        border-radius: 50%;
       }
       .logo {
         height: 3rem;
       }
+      .barcode {
+        height: 3rem;
+      }
       .logo-container {
-        padding-top: 2.1rem;
-        padding-left: 3.3rem;
+        padding-top: 2rem;
+        padding-left: 3.5rem;
         padding-bottom: 0.7rem;
         background-color: #313133;
         clip-path: polygon(
           100% 0,
           100% 65%,
-          47% 65%,
-          45% 100%,
+          47.4% 65%,
+          45.8% 100%,
           0 99%,
           0% 60%,
           0 0
         );
+      }
+      .image-barcode-section {
+        gap: 0.6rem;
+      }
+      .content-container {
+        padding-left: 1.4rem;
+        padding-top: 1.6rem;
       }
     </style>
   </head>
@@ -64,20 +75,28 @@
                     class="image-barcode-section is-flex is-flex-direction-column"
                   >
                     <div class="avatar-container">
-                      <img
-                        src="static/img/blank-avatar.png"
-                        alt="av"
-                        class="avatar"
-                      />
+                      <div class="avatar-box is-flex is-justify-content-center">
+                        <img
+                          src="static/img/blank-avatar.png"
+                          alt="av"
+                          class="avatar"
+                        />
+                      </div>
                     </div>
                     <div class="barcode-container">
-                      <img
-                        src="static/img/barcode.png"
-                        alt="barcode"
-                        class="barcode"
-                      />
+                      <div
+                        class="barcode-box is-flex is-justify-content-center"
+                      >
+                        <img
+                          src="static/img/barcode.png"
+                          alt="barcode"
+                          class="barcode"
+                        />
+                      </div>
                     </div>
-                    <div class="id-number-container">
+                    <div
+                      class="id-number-container is-flex is-justify-content-center"
+                    >
                       <div class="id-number">123-456-789</div>
                     </div>
                   </div>
