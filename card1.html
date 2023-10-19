@@ -1,16 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Card one</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <style>
+      .id-card {
+        background-image: url(static/img/bluewaves.png);
+        aspect-ratio: 1.586;
+        height: 11cm;
+        background-size: cover;
+      }
+      .main-title {
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.2rem;
+        color: #c08413;
+        font-weight: 700;
+      }
+      .logo {
+        /* height: 6rem; */
+        margin-right: 2.4rem;
+      }
+      .logo-header {
+        height: fit-content;
+        text-align: right;
+        padding-top: 5rem;
+      }
+
+      .avatar {
+        background-color: #fff;
+        height: 8rem;
+        border-radius: 13px;
+        /* box-shadow: ; */
+      }
+      .image-container {
+        margin-left: 3.8rem;
+      }
+      .barcode {
+        height: 3rem;
+      }
+      .id-number {
+        background-color: white;
+      }
+      .avatar-container {
+        background-color: #c08413;
+        height: 9rem;
+        border-radius: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border-radius: 20px; */
+        /* width: fit-content; */
+      }
+      .avatar {
+        position: absolute;
+        margin: 0 auto;
+      }
+      .avatar-container {
+        margin-top: 2.3rem;
+        position: relative;
+      }
+      .contents {
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.4;
+      }
+      pre {
+        font: inherit;
+        background: initial;
+        color: inherit;
+        padding: initial;
+      }
+      .barcode-container {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+      }
+      .id-number-container {
+        margin-top: 0.3rem;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
   </head>
   <body>
-    <h1>Card one</h1>
-    <ul>
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-    </ul>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Card one</h1>
+        <p class="subtitle">Horizontal with right hand image</p>
+        <div class="container pb-4">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+          </ul>
+        </div>
+        <div class="id-card">
+          <!-- <div class="top-spacing column is-12"></div> -->
+          <div class="logo-header">
+            <img class="logo" src="static/img/logo.png" alt="Logo" />
+          </div>
+          <div class="content-container mt-2">
+            <div class="parent-container-split columns">
+              <div class="image-container column is-3">
+                <div class="avatar-container">
+                  <img
+                    class="avatar"
+                    src="static/img/blank-avatar.png"
+                    alt="avatar image"
+                  />
+                </div>
+              </div>
+              <div class="has-text-weight-bold editor-container column">
+                <h1 class="main-title">STUDENT ID CARD</h1>
+
+                <div class="contents">
+                  <pre class="name-section preserve-whitespace">
+NAME         :   REESE MILLER</pre
+                  >
+                  <pre class="id-number-section preserve-whitespace">
+ID                 :   23-456-7890</pre
+                  >
+                  <pre class="date-of-birth preserve-whitespace">
+D.O.B           :  20/11/2001</pre
+                  >
+                  <pre class="address-section preserve-whitespace">
+ADDRESS :  123 ANYWHERE ST.</pre
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="barcode-container">
+            <img src="static/img/barcode.png" alt="barcode" class="barcode" />
+          </div>
+          <div class="id-number-container">
+            <div class="id-number">123-456-789</div>
+          </div>
+          <!-- <div class="bottom-spacing column is-12"></div> -->
+        </div>
+      </div>
+    </section>
   </body>
 </html>
