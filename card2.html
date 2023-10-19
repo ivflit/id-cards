@@ -32,9 +32,7 @@
         height: 17.446cm;
         background-size: cover;
       }
-      .avatar-container {
-        /* background-color: white; */
-      }
+
       .avatar-box {
         background-color: white;
         padding: 0.2rem;
@@ -49,7 +47,7 @@
       }
       .job-box {
         padding: 0.8rem 2.6rem;
-        background: blue;
+        background: #297dc0;
         color: white;
         border-radius: 25px;
       }
@@ -75,7 +73,9 @@
             <div
               class="card-contents-container is-flex is-flex-direction-column"
             >
-              <div class="logo-container is-flex is-justify-content-center">
+              <div
+                class="logo-container pt-5 is-flex is-justify-content-center"
+              >
                 <img
                   src="static/img/salfordlogo.png"
                   alt="salford logo"
@@ -101,9 +101,15 @@
               </div>
               <div class="editor-container is-flex is-justify-content-center">
                 <ul>
-                  <li>ID No :12345789</li>
-                  <li>E-mail :hello@reallygreatsite.com</li>
-                  <li>Phone :123-456-789</li>
+                  <li class="is-flex is-justify-content-space-around">
+                    <span>ID No</span> <span>:12345789</span>
+                  </li>
+                  <li class="is-flex is-justify-content-space-between">
+                    <span>E-mail</span> <span>:hello@reallygreatsite.com</span>
+                  </li>
+                  <li class="is-flex is-justify-content-space-around">
+                    <span>Phone</span> <span>:123-456-789</span>
+                  </li>
                 </ul>
               </div>
               <div class="barcode-container is-flex is-justify-content-center">
