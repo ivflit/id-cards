@@ -11,10 +11,13 @@
 
     <style>
       .id-card {
-        background-image: url();
+        background-color: #f9f4f4;
         aspect-ratio: 1.586;
         height: 11cm;
         background-size: cover;
+      }
+      .avatar {
+        height: 3rem;
       }
     </style>
   </head>
@@ -31,7 +34,43 @@
           </ul>
         </div>
         <div class="id-card-container is-flex is-justify-content-center">
-          <div class="id-card"></div>
+          <div class="id-card">
+            <div class="logo-container">
+              <img src="static/img/licerialogo.png" alt="" class="logo" />
+            </div>
+
+            <div class="content-container">
+              <div class="columns">
+                <div class="column is-5">
+                  <div
+                    class="image-barcode-section is-flex is-flex-direction-column is-justify-content-center"
+                  >
+                    <div class="avatar-container">
+                      <img
+                        src="static/img/blank-avatar.png"
+                        alt="av"
+                        class="avatar"
+                      />
+                    </div>
+                    <div class="barcode-container">
+                      <img
+                        src="static/img/barcode.png"
+                        alt="barcode"
+                        class="barcode"
+                      />
+                    </div>
+                    <div class="id-number-container">
+                      <div class="id-number">123-456-789</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="editor-container"></div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-border"></div>
+          </div>
         </div>
       </div>
     </section>
