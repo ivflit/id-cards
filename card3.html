@@ -79,6 +79,20 @@
           42% 33%
         );
       }
+      .id-card {
+        position: relative;
+      }
+      .white-specs-top {
+        position: absolute;
+        z-index: 3;
+        right: 0;
+      }
+      .white-specs-bot {
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        bottom: 0;
+      }
     </style>
   </head>
   <body>
@@ -95,6 +109,16 @@
         </div>
         <div class="id-card-container is-flex is-justify-content-center">
           <div class="id-card">
+            <img
+              src="static/img/whitespecs.png"
+              alt="white"
+              class="white-specs-top"
+            />
+            <img
+              src="static/img/whitespecs.png"
+              alt="white"
+              class="white-specs-bot"
+            />
             <div class="logo-container">
               <img src="static/img/licerialogo.png" alt="" class="logo" />
             </div>
