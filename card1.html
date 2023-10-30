@@ -1,138 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Card one</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
-    <style>
-      .id-card {
-        background-image: url(static/img/bluewaves.png);
-        aspect-ratio: 1.586;
-        height: 11cm;
-        background-size: cover;
-      }
-      .main-title {
-        font-family: "Montserrat", sans-serif;
-        font-size: 2.2rem;
-        color: #c08413;
-        font-weight: 700;
-      }
-      .logo {
-        margin-right: 2.4rem;
-      }
-      .logo-header {
-        height: fit-content;
-        text-align: right;
-        padding-top: 5rem;
-      }
-
-      .avatar {
-        background-color: #fff;
-        height: 8rem;
-        border-radius: 13px;
-      }
-      .image-container {
-        display: flex;
-        justify-content: end;
-      }
-      .barcode {
-        height: 3rem;
-      }
-      .id-number {
-        background-color: white;
-      }
-      .avatar-container {
-        background-color: #c08413;
-        height: 9rem;
-        width: 9rem;
-        border-radius: 24px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .avatar {
-        position: absolute;
-        margin: 0 auto;
-      }
-      .avatar-container {
-        margin-top: 2.3rem;
-      }
-      .contents {
-        font-size: 1.4rem;
-        font-weight: 500;
-        line-height: 1.4;
-      }
-      pre {
-        font: inherit;
-        background: initial;
-        color: inherit;
-        padding: initial;
-      }
-      .barcode-container {
-        display: flex;
-
-        justify-content: center;
-      }
-      .id-number-container {
-        margin-top: 0.3rem;
-        display: flex;
-        justify-content: center;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ID Card</title>
+    <link rel="stylesheet" href="/static/css/bulma.css" />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="/static/css/card1.css" />
   </head>
   <body>
-    <nav class="navbar has-shadow is-dark">
-      <div class="navbar-brand">
-        <a href="#" class="navbar-item">
-          <img
-            src="static/img/ivflit.png"
-            alt="logo"
-            style="max-height: 100px"
-            class="p-2"
-        /></a>
-        <a id="burger" class="navbar-burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
-      <div id="nav-links" class="navbar-menu">
-        <div class="navbar-end">
-          <a href="#" class="navbar-item">About Me</a>
-          <a href="#" class="navbar-item">Share</a>
+    <section class="hero is-fullheight">
+      <div class="hero-head">
+        <div class="container">
+          <nav class="navbar">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="/">
+                <!-- <img src="static/img/ivflit.png" height="28"> -->
+                ivflit Sample
+              </a>
+
+              <a id="burger" class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+            </div>
+            <div id="nav-links" class="navbar-menu">
+              <div class="navbar-end">
+                <a href="https://github.com/ivflit" class="navbar-item">
+                  <span class="icon">
+                    <ion-icon size="large" name="logo-github"></ion-icon>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </nav>
         </div>
+        <section class="section">
+          <div class="container">
+            <h1 class="title">1. Student ID card</h1>
+            <p class="subtitle">
+              Horizontal card with a wave background. Image on the left, content
+              to the right with a barcode and id number at the bottom
+            </p>
+          </div>
+        </section>
       </div>
-    </nav>
-    <section class="section">
-      <div class="container">
-        <h1 class="title">Student ID card</h1>
-        <p class="subtitle">
-          Horizontal card with a wave background. Image on the left, content to
-          the right with a barcode and id number at the bottom
-        </p>
-        <div class="container pb-4">
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-          </ul>
-        </div>
+      <main class="hero-body is-justify-content-center">
         <div class="id-card-container is-flex is-justify-content-center">
           <div class="id-card">
             <div class="logo-header">
-              <img class="logo" src="static/img/logo.png" alt="Logo" />
+              <img class="logo" src="/static/img/logo.png" alt="Logo" />
             </div>
             <div class="content-container mt-2">
               <div class="parent-container-split columns">
@@ -141,7 +59,7 @@
                     <div class="avatar-container">
                       <img
                         class="avatar"
-                        src="static/img/blank-avatar.png"
+                        src="/static/img/blank-avatar.png"
                         alt="avatar image"
                       />
                     </div>
@@ -170,14 +88,48 @@ ADDRESS :  123 ANYWHERE ST.</pre
               </div>
             </div>
             <div class="barcode-container">
-              <img src="static/img/barcode.png" alt="barcode" class="barcode" />
+              <img
+                src="/static/img/barcode.png"
+                alt="barcode"
+                class="barcode"
+              />
             </div>
             <div class="id-number-container">
               <div class="id-number">123-456-789</div>
             </div>
           </div>
         </div>
+      </main>
+
+      <div class="hero-foot">
+        <footer class="footer">
+          <div class="container is-flex is-justify-content-center">
+            <nav class="pagination" role="navigation" aria-label="pagination">
+              <ul class="pagination-list">
+                <li>
+                  <a href="card5.html" class="pagination-previous">Previous</a>
+                </li>
+                <li>
+                  <a href="/" class="pagination-link" aria-label="Goto Home"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="card2.html" class="pagination-next">Next page</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </footer>
       </div>
     </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

@@ -1,0 +1,34 @@
+.is-fullheight{
+height: 100%;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+.id-card {
+  /* Vertical ID card settings
+   aspect-ratio: 0.631;
+   height: 17.446cm;
+   */
+  aspect-ratio: 1.586;
+  height: 11cm;
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.link-to-card {
+  background-color: #c9c9c9;
+
+  padding: 1rem;
+  border: 1px solid black;
+  /* border-radius: 50px; */
+}
+.heading {
+  font-size: 2rem;
+}
+.button {
+  transition: 0.4s;
+}

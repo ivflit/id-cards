@@ -1,0 +1,73 @@
+.id-card {
+  background-image: url(/static/img/bluewaves.png);
+  aspect-ratio: 1.586;
+  height: 11cm;
+  background-size: cover;
+}
+.main-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  color: #c08413;
+  font-weight: 700;
+}
+.logo {
+  margin-right: 2.4rem;
+}
+.logo-header {
+  height: fit-content;
+  text-align: right;
+  padding-top: 5rem;
+}
+
+.avatar {
+  background-color: #fff;
+  height: 8rem;
+  border-radius: 13px;
+}
+.image-container {
+  display: flex;
+  justify-content: end;
+}
+.barcode {
+  height: 3rem;
+}
+.id-number {
+  background-color: white;
+}
+.avatar-container {
+  background-color: #c08413;
+  height: 9rem;
+  width: 9rem;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar {
+  position: absolute;
+  margin: 0 auto;
+}
+.avatar-container {
+  margin-top: 2.3rem;
+}
+.contents {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+pre {
+  font: inherit;
+  background: initial;
+  color: inherit;
+  padding: initial;
+}
+.barcode-container {
+  display: flex;
+
+  justify-content: center;
+}
+.id-number-container {
+  margin-top: 0.3rem;
+  display: flex;
+  justify-content: center;
+}

@@ -3,135 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
-
-    <style>
-      .id-card {
-        background-color: #f9f4f4;
-        aspect-ratio: 1.586;
-        height: 11cm;
-        background-size: cover;
-      }
-      .avatar {
-        height: 10rem;
-        border-radius: 50%;
-      }
-      .logo {
-        height: 3rem;
-      }
-      .barcode {
-        height: 3rem;
-      }
-      .logo-container {
-        padding-top: 2rem;
-        padding-left: 3.5rem;
-        padding-bottom: 0.7rem;
-        background-color: #313133;
-        clip-path: polygon(
-          100% 0,
-          100% 65%,
-          47.4% 65%,
-          45.8% 100%,
-          0 99%,
-          0% 60%,
-          0 0
-        );
-      }
-      .image-barcode-section {
-        gap: 0.6rem;
-      }
-      .content-container {
-        padding-left: 1.4rem;
-        padding-top: 0.5rem;
-        margin-bottom: 1rem;
-      }
-      .content-holder {
-        border-bottom: 4px solid black;
-        margin-right: 3rem;
-      }
-      .container-title {
-        font-size: 1.3rem;
-        font-weight: 700;
-      }
-      .content-holder {
-        padding-bottom: 1rem;
-      }
-      .name {
-        font-size: 2.6rem;
-        font-weight: 700;
-      }
-      .bottom-border {
-        padding-top: 2rem;
-        padding-left: 3.5rem;
-        padding-bottom: 0.7rem;
-        background-color: #313133;
-        clip-path: polygon(
-          43% 0,
-          100% 0,
-          100% 100%,
-          75% 100%,
-          0% 100%,
-          0% 31%,
-          42% 33%
-        );
-      }
-      .id-card {
-        position: relative;
-      }
-      .white-specs-top {
-        position: absolute;
-        z-index: 3;
-        right: 0;
-      }
-      .white-specs-bot {
-        position: absolute;
-        z-index: 3;
-        right: 0;
-        bottom: 0;
-      }
-    </style>
+    <title>ID Card</title>
+    <link rel="stylesheet" href="/static/css/bulma.css" />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="/static/css/card3.css" />
   </head>
   <body>
-    <nav class="navbar has-shadow is-dark">
-      <div class="navbar-brand">
-        <a href="#" class="navbar-item">
-          <img
-            src="static/img/ivflit.png"
-            alt="logo"
-            style="max-height: 100px"
-            class="p-2"
-        /></a>
-        <a id="burger" class="navbar-burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
-      <div id="nav-links" class="navbar-menu">
-        <div class="navbar-end">
-          <a href="#" class="navbar-item">About Me</a>
-          <a href="#" class="navbar-item">Share</a>
+    <section class="hero is-fullheight">
+      <div class="hero-head">
+        <div class="container">
+          <nav class="navbar">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="/">
+                <!-- <img src="static/img/ivflit.png" height="28"> -->
+                ivflit Sample
+              </a>
+
+              <a id="burger" class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+            </div>
+            <div id="nav-links" class="navbar-menu">
+              <div class="navbar-end">
+                <a href="https://github.com/ivflit" class="navbar-item">
+                  <span class="icon">
+                    <ion-icon size="large" name="logo-github"></ion-icon>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </nav>
         </div>
+        <section class="section">
+          <div class="container">
+            <h1 class="title">
+              <!-- title -->
+             3. Horizontal Business card
+            </h1>
+            <p class="subtitle">
+              <!-- description -->
+              Slightly more professional looking card, introduced the clip-path
+              property to me
+            </p>
+          </div>
+        </section>
       </div>
-    </nav>
-    <section class="section">
-      <div class="container">
-        <h1 class="title">Horizontal Business card</h1>
-        <p class="subtitle">
-          Slightly more professional looking card, introduced the clip-path
-          property to me
-        </p>
-        <div class="container pb-4">
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-          </ul>
-        </div>
+      <main class="hero-body is-justify-content-center">
+        <!-- content -->
         <div class="id-card-container is-flex is-justify-content-center">
           <div class="id-card">
             <img
@@ -214,7 +134,37 @@
             <div class="bottom-border"></div>
           </div>
         </div>
+      </main>
+
+      <div class="hero-foot">
+        <footer class="footer">
+          <div class="container is-flex is-justify-content-center">
+            <nav class="pagination" role="navigation" aria-label="pagination">
+              <ul class="pagination-list">
+                <li>
+                  <a href="card2.html" class="pagination-previous">Previous</a>
+                </li>
+                <li>
+                  <a href="/" class="pagination-link" aria-label="Goto Home"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="card4.html" class="pagination-next">Next page</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </footer>
       </div>
     </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

@@ -1,0 +1,83 @@
+.id-card {
+  background-color: #f9f4f4;
+  aspect-ratio: 1.586;
+  height: 11cm;
+  background-size: cover;
+}
+.avatar {
+  height: 10rem;
+  border-radius: 50%;
+}
+.logo {
+  height: 3rem;
+}
+.barcode {
+  height: 3rem;
+}
+.logo-container {
+  padding-top: 2rem;
+  padding-left: 3.5rem;
+  padding-bottom: 0.7rem;
+  background-color: #313133;
+  clip-path: polygon(
+    100% 0,
+    100% 65%,
+    47.4% 65%,
+    45.8% 100%,
+    0 99%,
+    0% 60%,
+    0 0
+  );
+}
+.image-barcode-section {
+  gap: 0.6rem;
+}
+.content-container {
+  padding-left: 1.4rem;
+  padding-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.content-holder {
+  border-bottom: 4px solid black;
+  margin-right: 3rem;
+}
+.container-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.content-holder {
+  padding-bottom: 1rem;
+}
+.name {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+.bottom-border {
+  padding-top: 2rem;
+  padding-left: 3.5rem;
+  padding-bottom: 0.7rem;
+  background-color: #313133;
+  clip-path: polygon(
+    43% 0,
+    100% 0,
+    100% 100%,
+    75% 100%,
+    0% 100%,
+    0% 31%,
+    42% 33%
+  );
+}
+.id-card {
+  position: relative;
+}
+.white-specs-top {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+}
+.white-specs-bot {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 0;
+}

@@ -3,95 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Card 2</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
+    <title>ID Card</title>
+    <link rel="stylesheet" href="/static/css/bulma.css" />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="/static/css/card2.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        font-family: "Montserrat", sans-serif;
-      }
-      .name {
-        font-weight: 700;
-        font-size: 1.73rem;
-      }
-      .editor-container {
-        font-weight: 400;
-      }
-      .id-card {
-        background-image: url(static/img/verticalCardbg.png);
-        /* Vertical ID card settings */
-        aspect-ratio: 0.631;
-        height: 17.446cm;
-        background-size: cover;
-      }
-
-      .avatar-box {
-        background-color: white;
-        padding: 0.2rem;
-        border-radius: 100px;
-      }
-      .avatar {
-        height: 13rem;
-        border-radius: 100px;
-      }
-      .barcode {
-        height: 3rem;
-      }
-      .job-box {
-        padding: 0.8rem 2.6rem;
-        background: #297dc0;
-        color: white;
-        border-radius: 25px;
-      }
-      .card-contents-container {
-        gap: 1rem;
-      }
-    </style>
   </head>
   <body>
-    <nav class="navbar has-shadow is-dark">
-      <div class="navbar-brand">
-        <a href="#" class="navbar-item">
-          <img
-            src="static/img/ivflit.png"
-            alt="logo"
-            style="max-height: 100px"
-            class="p-2"
-        /></a>
-        <a id="burger" class="navbar-burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
-      <div id="nav-links" class="navbar-menu">
-        <div class="navbar-end">
-          <a href="#" class="navbar-item">About Me</a>
-          <a href="#" class="navbar-item">Share</a>
+    <section class="hero is-fullheight">
+      <div class="hero-head">
+        <div class="container">
+          <nav class="navbar">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="/">
+                <!-- <img src="static/img/ivflit.png" height="28"> -->
+                ivflit Sample
+              </a>
+
+              <a id="burger" class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+            </div>
+            <div id="nav-links" class="navbar-menu">
+              <div class="navbar-end">
+                <a href="https://github.com/ivflit" class="navbar-item">
+                  <span class="icon">
+                    <ion-icon size="large" name="logo-github"></ion-icon>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </nav>
         </div>
+        <section class="section pb-0">
+          <div class="container">
+            <h1 class="title">
+              <!-- title -->
+              2. Vertical Business card
+            </h1>
+            <p class="subtitle">
+              <!-- description -->
+              A vertical ID Card with circular border around the avatar
+            </p>
+          </div>
+        </section>
       </div>
-    </nav>
-    <section class="section">
-      <div class="container">
-        <h1 class="title">Vertical Business card</h1>
-        <p class="subtitle">
-          A vertical ID Card with circular border around the avatar
-        </p>
-        <div class="container pb-4">
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-          </ul>
-        </div>
+      <main class="hero-body is-justify-content-center">
         <div class="id-card-container is-flex is-justify-content-center">
           <div class="id-card">
             <div
@@ -101,7 +65,7 @@
                 class="logo-container pt-5 is-flex is-justify-content-center"
               >
                 <img
-                  src="static/img/salfordlogo.png"
+                  src="/static/img/salfordlogo.png"
                   alt="salford logo"
                   class="logo"
                 />
@@ -109,7 +73,7 @@
               <div class="avatar-container is-flex is-justify-content-center">
                 <div class="avatar-box">
                   <img
-                    src="static/img/blank-avatar.png"
+                    src="/static/img/blank-avatar.png"
                     alt="avatar"
                     class="avatar"
                   />
@@ -151,7 +115,37 @@
             </div>
           </div>
         </div>
+      </main>
+
+      <div class="hero-foot">
+        <footer class="footer">
+          <div class="container is-flex is-justify-content-center">
+            <nav class="pagination" role="navigation" aria-label="pagination">
+              <ul class="pagination-list">
+                <li>
+                  <a href="card1.html" class="pagination-previous">Previous</a>
+                </li>
+                <li>
+                  <a href="/" class="pagination-link" aria-label="Goto Home"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="card3.html" class="pagination-next">Next page</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </footer>
       </div>
     </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

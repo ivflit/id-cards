@@ -4,100 +4,101 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ID Card</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f0f0f0;
-      }
-      .id-card {
-        width: 300px;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        margin: 20px auto;
-        padding: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        overflow: hidden;
-      }
-      .photo {
-        width: 100%;
-        text-align: center;
-      }
-      .photo img {
-        max-width: 100px;
-        max-height: 100px;
-        border: 5px solid #fff;
-        border-radius: 50%;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-      }
-      .details {
-        text-align: center;
-      }
-      .name {
-        font-size: 24px;
-        margin: 10px 0;
-      }
-      .job-title {
-        font-size: 16px;
-        color: #555;
-      }
-      .contact-info {
-        margin-top: 20px;
-      }
-      .info-item {
-        font-size: 14px;
-        margin-bottom: 10px;
-      }
-      .barcode {
-        text-align: center;
-        margin-top: 20px;
-      }
-      .barcode img {
-        max-width: 80%;
-      }
-    </style>
+    <link rel="stylesheet" href="/static/css/bulma.css" />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="/static/css/card5.css" />
   </head>
   <body>
-    <nav class="navbar has-shadow is-dark">
-      <div class="navbar-brand">
-        <a href="#" class="navbar-item">
-          <img
-            src="static/img/ivflit.png"
-            alt="logo"
-            style="max-height: 100px"
-            class="p-2"
-        /></a>
-        <a id="burger" class="navbar-burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
-      <div id="nav-links" class="navbar-menu">
-        <div class="navbar-end">
-          <a href="#" class="navbar-item">About Me</a>
-          <a href="#" class="navbar-item">Share</a>
+    <section class="hero is-fullheight">
+      <div class="hero-head">
+        <div class="container">
+          <nav class="navbar">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="/">
+                <!-- <img src="static/img/ivflit.png" height="28"> -->
+                ivflit Sample
+              </a>
+
+              <a id="burger" class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+            </div>
+            <div id="nav-links" class="navbar-menu">
+              <div class="navbar-end">
+                <a href="https://github.com/ivflit" class="navbar-item">
+                  <span class="icon">
+                    <ion-icon size="large" name="logo-github"></ion-icon>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </nav>
         </div>
+        <section class="section">
+          <div class="container">
+            <h1 class="title">
+              <!-- title -->
+              5. Second Chatgpt version
+            </h1>
+            <p class="subtitle">
+              <!-- description -->
+              More advanced prompt produced a better style layout
+            </p>
+          </div>
+        </section>
       </div>
-    </nav>
-    <div class="id-card">
-      <div class="photo">
-        <img src="https://i.pravatar.cc/800" alt="Profile Picture" />
-      </div>
-      <div class="details">
-        <div class="name">John Doe</div>
-        <div class="job-title">Web Developer</div>
-        <div class="contact-info">
-          <div class="info-item">Email: john.doe@email.com</div>
-          <div class="info-item">Phone: (123) 456-7890</div>
-          <div class="info-item">Address: 123 Main St, City, State</div>
+      <main class="hero-body is-justify-content-center">
+        <!-- content -->
+        <div class="id-card">
+          <div class="photo">
+            <img src="https://i.pravatar.cc/800" alt="Profile Picture" />
+          </div>
+          <div class="details">
+            <div class="name">John Doe</div>
+            <div class="job-title">Web Developer</div>
+            <div class="contact-info">
+              <div class="info-item">Email: john.doe@email.com</div>
+              <div class="info-item">Phone: (123) 456-7890</div>
+              <div class="info-item">Address: 123 Main St, City, State</div>
+            </div>
+          </div>
+          <div class="barcode">
+            <img src="/static/img/barcode.png" alt="Barcode" />
+          </div>
         </div>
+      </main>
+
+      <div class="hero-foot">
+        <footer class="footer">
+          <div class="container is-flex is-justify-content-center">
+            <nav class="pagination" role="navigation" aria-label="pagination">
+              <ul class="pagination-list">
+                <li>
+                  <a href="card4.html" class="pagination-previous">Previous</a>
+                </li>
+                <li>
+                  <a href="/" class="pagination-link" aria-label="Goto Home"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="card1.html" class="pagination-next">Next page</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </footer>
       </div>
-      <div class="barcode">
-        <img src="static/img/barcode.png" alt="Barcode" />
-      </div>
-    </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
