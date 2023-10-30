@@ -7,7 +7,7 @@
 }
 .id-card {
   font-family: "Montserrat", sans-serif;
-  background-image: url(/static/img/verticalCardbg.png);
+  background-image: url(./static/img/verticalCardbg.png);
   /* Vertical ID card settings */
   aspect-ratio: 0.631;
   height: 17.446cm;
