@@ -1,5 +1,5 @@
 .id-card {
-  background-image: url(./static/img/bluewaves.png);
+  background-image: url(../img/bluewaves.png);
   aspect-ratio: 1.586;
   height: 11cm;
   background-size: cover;
